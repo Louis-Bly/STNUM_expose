@@ -1,0 +1,7 @@
+library(ggplot2)
+library(FactoMineR)
+data <- read.csv("understat.com.csv",header=TRUE,sep=",",dec=".")
+pairs(data[,8:9],main="Scatterplots")
+cor(data[,8:9])
+acp_n <- PCA(data,scale.unit=TRUE,ncp=7,quali.sup=8,graph=FALSE)
+summary(acp_n)
