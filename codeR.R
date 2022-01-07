@@ -1,6 +1,5 @@
 library(ggplot2)
-library(FactoMineR) 
-setwd("C:/Users/Océane/Documents/Ponts/2A/STATNUM/Projet")
+library(FactoMineR)
 data <- read.csv("understat.com.csv",header=TRUE,sep=",",dec=".")
 pairs(data[,8:9],main="Scatterplots")
 cor(data[,8:9])
