@@ -1,7 +1,10 @@
 library(ggplot2)
 library(FactoMineR)
 data <- read.csv("understat.com.csv",header=TRUE,sep=",",dec=".")
-pairs(data[,8:9],main="Scatterplots")
-cor(data[,8:9])
-acp_n <- PCA(data,scale.unit=TRUE,ncp=7,quali.sup=8,graph=FALSE)
+nums <- unlist(lapply(data, is.numeric))
+num_data <- data[nums]
+plot(num_data, main="alors peut etre")
+pairs(num_data,main="Scatterplots")
+cor(num_data)
+acp_n <- PCA(num_data,scale.unit=TRUE,ncp=7,quali.sup=8,graph=FALSE)
 summary(acp_n)
