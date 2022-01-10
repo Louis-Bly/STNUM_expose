@@ -1,10 +1,11 @@
 library(ggplot2)
 library(FactoMineR)
-data <- read.csv("understat.com.csv",header=TRUE,sep=",",dec=".")
-nums <- unlist(lapply(data, is.numeric))
-num_data <- data[nums]
-plot(num_data, main="alors peut etre")
-pairs(num_data,main="Scatterplots")
-cor(num_data)
-acp_n <- PCA(num_data,scale.unit=TRUE,ncp=7,quali.sup=8,graph=FALSE)
-summary(acp_n)
+setwd("/Users/louisparis/Desktop/Ponts 2A/STNUM/Projet")
+red_wine <- read.csv("wineQualityReds.csv",header=TRUE,sep=",",dec=",")
+white_wine <- read.csv("wineQualityWhites.csv", header=TRUE, sep=",", dec=",")
+
+
+
+
+
+
