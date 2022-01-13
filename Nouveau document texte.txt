@@ -1,0 +1,16 @@
+PLAN D'ACTION OMG TRO BI1
+
+2 jeux de données: vin rouge et vin blanc
+
+Analyse de base:
+covariance, boites à moustache, ...
+
+TP1:
+--- on fusionne les deux bases, on essaie de retrouver par ACP quels vins sont blancs/rouges
+
+TP2:
+Estimation de paramètres: poubelle tier tg
+(En vrai on regardera vite fait mais perso j'aime pas)
+
+TP3:
+--- on peut: chercher à retrouver la note avec une régression (linéaire ou logistique ou les 2)
