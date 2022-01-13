@@ -7,6 +7,7 @@ covariance, boites à moustache, ...
 
 TP1:
 --- on fusionne les deux bases, on essaie de retrouver par ACP quels vins sont blancs/rouges
+régréssion logistique ?
 
 TP2:
 Estimation de paramètres: poubelle tier tg
